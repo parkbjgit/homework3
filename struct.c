@@ -25,8 +25,8 @@ printf("\nst3.lastName = %c\n", st3.lastName);  //st3의 lastName 출력
 printf("st3.studentId = %d\n", st3.studentId);  //st3의 studentId 출력
 printf("st3.grade = %c\n", st3.grade);          //st3의 grade 출력
 /* equality test */
-if(st3 == st2) /* not working */               //문자를 비교하는 방법이 잘못됨
-printf("equal\n");                             //문자열을 비교할 때는 strcmp를 사용해야함
+if(st3 == st2) /* not working */               //구조체 자체를 비교할 수는 없음
+printf("equal\n");                             //구조체의 원소를 각각 하나씩 비교해줘야함
 else                                           //오류이므로 실행되지 않음
 printf("not equal\n");
 return 0;
